@@ -16,6 +16,8 @@ class CarsController < ApplicationController
     end
   end
 
+  private
+
   def car_params
     params.require(:car).permit(:name, :image, :brand, :reservation_fee)
   end

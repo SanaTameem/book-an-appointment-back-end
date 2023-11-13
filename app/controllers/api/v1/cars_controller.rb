@@ -1,4 +1,13 @@
-class CarsController < ApplicationController
+class Api::V1::CarsController < ApplicationController
+  def show
+    @car = Car.find(params[:id])
+    if @car
+      render json: @car, status: :ok
+    else
+      render json: { error: 'Car not found' }, status: :not_found
+    end
+  end
+
   def create
     @car = Car.new(car_params)
     if @car.save

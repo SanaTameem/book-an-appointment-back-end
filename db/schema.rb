@@ -17,8 +17,11 @@ ActiveRecord::Schema[7.1].define(version: 2023_11_10_114544) do
   create_table "cars", force: :cascade do |t|
     t.string "name", null: false
     t.string "image", null: false
-    t.string "brand", null: false
-    t.integer "reservation_fee", null: false
+    t.string "model", null: false
+    t.integer "finance_fee", null: false
+    t.integer "total_amount", null: false
+    t.text "discription"
+    t.integer "duration", null: false
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
   end

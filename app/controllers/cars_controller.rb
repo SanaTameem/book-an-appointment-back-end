@@ -10,7 +10,7 @@ class CarsController < ApplicationController
 
   def update
     if @car.update(car_params)
-      render json: @car
+      render json: @car, status: :updated, location: @car
     else
       render json: @car.errors, status: :unprocessable_entity
     end
@@ -19,6 +19,6 @@ class CarsController < ApplicationController
   private
 
   def car_params
-    params.require(:car).permit(:name, :image, :brand, :reservation_fee)
+    params.require(:car).permit(:name, :image, :model, :finance_fee, :total_amount, :discription, :duration)
   end
 end

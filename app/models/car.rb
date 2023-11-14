@@ -10,6 +10,5 @@ class Car < ApplicationRecord
   validates :total_amount, presence: true, numericality: {
     greather_than_or_equal_to: MIN_VALUE, less_than_or_equal_to: MAX_VALUE
   }
-  validates :discription
   validates :duration, numericality: { only_integer: true, greater_than: 0 }
 end

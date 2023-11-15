@@ -1,15 +1,21 @@
 Rails.application.routes.draw do
-  get "up" => "rails/health#show", as: :rails_health_check
-
-  post 'sign_up', to: 'api/v1/users#sign_up'
-  post 'login', to: 'api/v1/users#login'
+  devise_for :users, path: 'auth', path_names: {
+    sign_in: 'login',
+    sign_out: 'logout',
+    registration: 'signup'
+  },
+  controllers: {
+    sessions: 'users/sessions',
+    registrations: 'users/registrations'
+  }
 
   namespace :api do
     namespace :v1 do
-      resources :cars, only: [:index, :show, :create, :destroy]
+      resources :users do
+        resources :cars, only: [:index, :show, :create, :destroy]
+        resources :reservations
+      end
     end
   end
-
-  # Defines the root path route ("/")
-  # root "posts#index"
+  # get "up" => "rails/health#show", as: :rails_health_check
 end

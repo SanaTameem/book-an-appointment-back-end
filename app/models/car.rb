@@ -4,6 +4,7 @@ class Car < ApplicationRecord
   validates :name, presence: true
   validates :image, presence: true
   validates :model, presence: true
+  has_many :reservations, dependent: :destroy
   validates :finance_fee, presence: true, numericality: {
     greather_than_or_equal_to: MIN_VALUE, less_than_or_equal_to: MAX_VALUE
   }

@@ -6,10 +6,12 @@ class Car < ApplicationRecord
   validates :model, presence: true
   has_many :reservations, dependent: :destroy
   validates :finance_fee, presence: true, numericality: {
-    greather_than_or_equal_to: MIN_VALUE, less_than_or_equal_to: MAX_VALUE
+    greater_than_or_equal_to: MIN_VALUE,
+    less_than_or_equal_to: MAX_VALUE
   }
   validates :total_amount, presence: true, numericality: {
-    greather_than_or_equal_to: MIN_VALUE, less_than_or_equal_to: MAX_VALUE
+    greater_than_or_equal_to: MIN_VALUE,
+    less_than_or_equal_to: MAX_VALUE
   }
   validates :duration, numericality: { only_integer: true, greater_than: 0 }
 end

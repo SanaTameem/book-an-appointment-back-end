@@ -11,7 +11,6 @@ class UserSerializer
       name: @user.name,
       role: @user.role,
       created_date: @user.created_at&.strftime('%m/%d/%Y')
-      # Add any other attributes you want to include
     }
   end
 end

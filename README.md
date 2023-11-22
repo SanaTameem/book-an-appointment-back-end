@@ -20,6 +20,7 @@
     - [Prerequisites](#prerequisites)
     - [Setup](#setup)
     - [Install](#install)
+    - [Test](#test)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
@@ -96,7 +97,15 @@ Install this project with:
 ```sh
   cd my-project
   bundle install
-  rails db:create, rails db:migrate, rails db:seed
+  rails db:create
+  rails db:migrate
+  rails db:seed
+  rails s
+  
+```
+### Test
+To run tests, run the following command:
+  rspec
 ```
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>

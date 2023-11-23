@@ -105,8 +105,25 @@ Install this project with:
 ```
 ### Test
 To run tests, run the following command:
+```
   rspec
 ```
+<!-- LIVE DEMO -->
+
+## 🚀 Live Demo <a name="live-demo"></a>
+
+- [Live Demo Link](https://car-rent-swa4.onrender.com/)
+
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- Kanban Board -->
+
+## 📆 Kanban Board <a name="kanban-board"></a>
+
+- [Kanban board](https://github.com/users/SanaTameem/projects/15)
+
+- [Kanban board initial state ](https://github.com/SanaTameem/book-an-appointment-back-end/issues/12)
+- We are a team of 3 members as indicated in the authors section.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 

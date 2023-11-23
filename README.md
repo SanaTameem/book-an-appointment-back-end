@@ -21,6 +21,8 @@
     - [Setup](#setup)
     - [Install](#install)
     - [Test](#test)
+  - [🚀 Live Demo ](#-live-demo-)
+  - [📆 Kanban Board ](#kanban-board-)
   - [👥 Authors ](#-authors-)
   - [🔭 Future Features ](#-future-features-)
   - [🤝 Contributing ](#-contributing-)
